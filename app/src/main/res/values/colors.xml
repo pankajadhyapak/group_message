@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_blue_color">#3079ab</color>
+    <color name="unread_msg_color">#ccc</color>
+    <color name="sent_big_label_color">#39add1</color>
+    <color name="inbox_big_label_color">#637a91</color>
+    <color name="btn_pressed_color">#245B7F</color>
+    <color name="btn_focused_color">#2D719F</color>
+    <color name="btn_default_color">#163950</color>
+
+
+</resources>

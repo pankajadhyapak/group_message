@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue_color"
+    tools:context="com.w3effects.groupmess.groupmess.RegisterActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/appName"
+        android:textSize="40sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For MSRIT Students"
+        android:layout_marginTop="12dp"
+        android:id="@+id/appTagline"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/containerBox"
+        android:layout_below="@id/appTagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstnameflied"
+            android:hint="@string/firstname" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/usn_hint"
+        android:id="@+id/usnTextFeild"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTextField"
+        android:hint="@string/email_hint" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTextField"
+        android:hint="@string/password_hint" />
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_btn_label"
+        android:id="@+id/Registerbutton"
+        android:layout_below="@id/containerBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/button_custom"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/cancel_label"
+        android:id="@+id/cacelLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Registerbutton"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <CheckBoxPreference android:title="Enable Notifications ?"
+        android:defaultValue="true"
+        android:summary="This option if selected will allow you to receive Notifications "
+        android:key="notification" />
+
+    <ListPreference
+        android:title="Select Your Current Semester"
+        android:dependency="notification"
+        android:summary="First Semester"
+        android:key="currentSemester"
+        android:defaultValue="0"
+        android:entries="@array/semesters_list_titles"
+        android:entryValues="@array/semesters_list_values" />
+</PreferenceScreen>
